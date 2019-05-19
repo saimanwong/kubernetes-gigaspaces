@@ -32,7 +32,7 @@ metadata:
 #statefulset spec
 spec:
   replicas: {{$replicaCount}}
-  serviceName: {{ template "xap-pu.fullname" $ }}-hs
+  serviceName: {{ template "xap-pu.fullname" $ }}
   selector:
     matchLabels:
       selectorId: {{ template "xap-pu.fullname" $ }}{{$podSuffix}}
