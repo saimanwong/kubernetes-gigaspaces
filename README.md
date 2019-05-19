@@ -13,20 +13,17 @@ Get all
 ```
 $ kubectl get all -n gigaspaces -o wide
 NAME                        READY     STATUS    RESTARTS   AGE       IP           NODE
-pod/manager-xap-manager-0   1/1       Running   2          9m        172.17.0.6   minikube
-pod/pu-xap-pu-1-0           1/1       Running   0          6m        172.17.0.7   minikube
-pod/pu-xap-pu-1-1           0/1       Pending   0          2m        <none>       <none>
-pod/pu-xap-pu-2-0           1/1       Running   0          3m        172.17.0.9   minikube
-pod/pu-xap-pu-2-1           1/1       Running   0          2m        172.17.0.8   minikube
+pod/manager-xap-manager-0   1/1       Running   5          15m       172.17.0.6   minikube
+pod/pu-xap-pu-1-0           1/1       Running   0          11m       172.17.0.7   minikube
+pod/pu-xap-pu-1-1           1/1       Running   0          1m        172.17.0.8   minikube
 
 NAME                                  TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)                               AGE       SELECTOR
-service/manager-xap-manager-hs        ClusterIP   None          <none>        2181/TCP,2888/TCP,3888/TCP,4174/TCP   9m        selectorId=manager-xap-manager
-service/manager-xap-manager-service   NodePort    10.105.63.9   <none>        8090:30890/TCP                        9m        selectorId=manager-xap-manager
+service/manager-xap-manager-hs        ClusterIP   None          <none>        2181/TCP,2888/TCP,3888/TCP,4174/TCP   15m       selectorId=manager-xap-manager
+service/manager-xap-manager-service   NodePort    10.105.63.9   <none>        8090:30890/TCP                        15m       selectorId=manager-xap-manager
 
 NAME                                   DESIRED   CURRENT   AGE       CONTAINERS             IMAGES
-statefulset.apps/manager-xap-manager   1         1         9m        gigaspaces-container   gigaspaces/xap-enterprise:14.2
-statefulset.apps/pu-xap-pu-1           2         2         6m        pu-container           gigaspaces/xap-enterprise:14.2
-statefulset.apps/pu-xap-pu-2           2         2         3m        pu-container           gigaspaces/xap-enterprise:14.2
+statefulset.apps/manager-xap-manager   1         1         15m       gigaspaces-container   gigaspaces/xap-enterprise:14.2
+statefulset.apps/pu-xap-pu-1           2         2         12m       pu-container           gigaspaces/xap-enterprise:14.2
 ```
 
 Kubernetes dashboard
