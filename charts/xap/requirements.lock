@@ -1,0 +1,9 @@
+dependencies:
+- name: xap-manager
+  repository: file://../xap-manager
+  version: "14.2"
+- name: xap-pu
+  repository: file://../xap-pu
+  version: "14.2"
+digest: sha256:33dd7723572298a351f02f71cb81cd706ed86c64ba53394a997ce043004f140f
+generated: 2019-04-02T17:52:46.482365151Z

@@ -1,0 +1,9 @@
+dependencies:
+  - name: xap-manager
+    version: "14.2"
+    repository: file://../xap-manager
+    alias: manager
+  - name: xap-pu
+    version: "14.2"
+    repository: file://../xap-pu
+    alias: pu
